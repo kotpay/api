@@ -1,0 +1,27 @@
+<configuration xmlns="https://github.com/qoomon/maven-git-versioning-extension"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="https://github.com/qoomon/maven-git-versioning-extension https://qoomon.github.io/maven-git-versioning-extension/configuration-7.0.0.xsd">
+
+    <refs>
+        <ref type="branch">
+            <pattern><![CDATA[release/(?<version>.+)]]></pattern>
+            <version>${ref.version}.${commit.timestamp}</version>
+        </ref>
+
+        <ref type="branch">
+            <pattern><![CDATA[.+?/(?<version>.+)]]></pattern>
+            <version>${ref.version}-${commit.timestamp}</version>
+        </ref>
+
+        <ref type="branch">
+            <pattern>(?:master|main)</pattern>
+            <version>master-${commit.timestamp}</version>
+        </ref>
+    </refs>
+
+    <!-- optional fallback configuration in case of no matching ref configuration-->
+    <rev>
+        <version>${commit}</version>
+    </rev>
+
+</configuration>
