@@ -49,8 +49,8 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/kotpay/</url>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/kotpay/api</url>
         </repository>
     </distributionManagement>
 
