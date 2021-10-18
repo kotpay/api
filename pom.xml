@@ -50,7 +50,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/kotpay/api</url>
+            <url>https://maven.pkg.github.com/kotpay/repo</url>
         </repository>
     </distributionManagement>
 
