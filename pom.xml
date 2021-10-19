@@ -6,9 +6,10 @@
 
     <artifactId>api</artifactId>
     <groupId>com.github.kotpay</groupId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>master-1634627761</version>
     <packaging>jar</packaging>
-    <name>api</name>
+    <name>API</name>
+    <description>Common API interfaces and classes for all projects</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
