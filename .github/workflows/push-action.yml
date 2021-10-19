@@ -13,4 +13,4 @@ jobs:
       - name: Deploy
         run: mvn -B deploy --file pom.xml
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PUBLISH_REPO_TOKEN }}
