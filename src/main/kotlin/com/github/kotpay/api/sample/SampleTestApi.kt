@@ -7,4 +7,5 @@ interface SampleTestApi {
     fun getHello(name: String): Response<String>
 
     fun getException(): Response<String>
+
 }
